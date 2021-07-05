@@ -1,0 +1,86 @@
+
+
+.ds-modal-absolute {
+    display: none; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    padding:0px;
+    margin:0px;
+    backdrop-filter: blur(2px);
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+
+.ds-modal {  
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid #bbb;
+    background-color: #fefefe;
+    
+}
+
+
+.ds-modal-content {   
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;  
+  width: 80%;
+}
+
+.ds-modal .close {
+    top:5px;
+    right:5px;
+    position:absolute;
+}
+
+.ds-modal .close:hover,
+.ds-modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*map list*/
+#ds-map-list {
+    border: 1px solid #bbb; 
+    width:100%; 
+    padding: 10px;
+    background: white;
+}
+
+#ds-map-list tr:nth-child(even) {
+    background-color: #eee;
+}
+
+
+#ds-map-list-header{
+    border: 1px solid #bbb; 
+    width:100%; 
+    padding: 10px;
+  /*  border-bottom: 0px solid #bbb; */
+    background: transparent;
+	padding: 4px 10px;
+}
+
+#ds-map-list-add{
+    width:100%; 
+    padding: 10px;
+}
+
+tr{
+    border-bottom: 1px solid #bbb;
+}
+
+.ds-modal td{
+    white-space: nowrap;
+}
+
+.ds-animate-zoom {animation:animatezoom 0.3s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.ds-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
